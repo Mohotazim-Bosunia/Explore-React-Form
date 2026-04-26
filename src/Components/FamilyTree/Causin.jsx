@@ -1,9 +1,11 @@
 import React from "react";
+import Special from "./Special";
 
-const Causin = ({ name }) => {
+const Causin = ({ name, asset }) => {
   return (
     <div>
       <h3>{name}</h3>
+      {name === "Sumon" && <Special asset={asset}></Special>}
     </div>
   );
 };
